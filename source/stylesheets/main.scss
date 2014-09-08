@@ -1,18 +1,36 @@
+//
+// Libs
+// --------------------------------------------------
 @import '../bower/breakpoint-sass/stylesheets/breakpoint';
 @import '../bower/normalize-scss/normalize';
 
+//
+// Global Variables and Styles
+// --------------------------------------------------
 @import 'app/variables';
 @import 'app/fonts';
 @import 'app/base';
 @import 'app/icons';
 @import 'app/headings';
 
+//
+// Utils
+// --------------------------------------------------
 @import 'app/utils/layout-utils';
 
+//
+// Layouts
+// --------------------------------------------------
 @import 'app/layouts/l-main';
 
+//
+// Components
+// --------------------------------------------------
 @import 'app/components/media';
 @import 'app/components/flag';
 @import 'app/components/center-wrap';
 
+//
+// State
+// --------------------------------------------------
 @import 'app/state';
