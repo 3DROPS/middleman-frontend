@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "normalize-scss": "latest",
-    "modernizr": "latest"
+    "modernizr": "latest",
+    "breakpoint-sass": "~2.5.0"
   }
 }
