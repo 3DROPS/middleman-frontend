@@ -1,0 +1,10 @@
+.CenterWrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.CenterWrap-vCenter {
+  display: table-cell;
+  vertical-align: middle;
+}

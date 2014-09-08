@@ -1,0 +1,31 @@
+.Flag {
+  display: table;
+  width: 100%;
+}
+
+.Flag-head,
+.Flag-body {
+  display: table-cell;
+  vertical-align: middle;
+
+  .Flag--top & {
+    vertical-align: top;
+  }
+
+  .Flag--bottom & {
+    vertical-align: bottom;
+  }
+}
+
+.Flag-head {
+  padding-right: 10px;
+
+  .Flag--rev & {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}
+
+.Flag-body {
+  width: 100%;
+}

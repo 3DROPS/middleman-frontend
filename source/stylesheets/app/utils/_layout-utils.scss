@@ -1,0 +1,26 @@
+.u-clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after { clear: both; }
+}
+
+.u-absoluteCenter {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+}
+
+.u-positionRelative {
+  position: relative;
+}
+
+.u-positionAbsolute {
+  position: absolute;
+}

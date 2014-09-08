@@ -1,0 +1,21 @@
+.Media {
+  margin:10px;
+}
+
+.Media,
+.Media-body {
+  overflow:hidden;
+}
+
+.Media-head {
+  float:left;
+  margin-right: 10px;
+
+  .Media--right & {
+    float:right;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  img { display:block; }
+}
