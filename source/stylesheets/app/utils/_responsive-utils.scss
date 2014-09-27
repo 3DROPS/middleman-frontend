@@ -1,6 +1,3 @@
-// TODO: These need to be fixed since we aren't using
-// Bourbon/Neat anymore
-
 @mixin responsive-visibility($disp: block) {
   display: $disp !important;
 }
@@ -13,21 +10,21 @@
 @mixin visible-xs($namespace: "", $display: block) {
   .visible-#{$namespace}-xs {
     @include responsive-invisibility();
-    @include media(max-width $screen-xs-max) {
+    @include breakpoint((max-width $screen-xs-max)) {
       @include responsive-visibility($display);
     }
     &.visible-#{$namespace}-sm {
-      @include media(min-width $screen-sm-min max-width $screen-sm-max) {
+      @include breakpoint((min-width $screen-sm-min) (max-width $screen-sm-max)) {
         @include responsive-visibility($display);
       }
     }
     &.visible-#{$namespace}-md {
-      @include media(min-width $screen-md-min max-width $screen-md-max) {
+      @include breakpoint((min-width $screen-md-min) (max-width $screen-md-max)) {
         @include responsive-visibility($display);
       }
     }
     &.visible-#{$namespace}-lg {
-      @include media(min-width $screen-lg-min) {
+      @include breakpoint((min-width $screen-lg-min)) {
         @include responsive-visibility($display);
       }
     }
@@ -44,20 +41,20 @@
   .visible-#{$namespace}-sm {
     @include responsive-invisibility();
     &.visible-#{$namespace}-xs {
-      @include media(max-width $screen-xs-max) {
+      @include breakpoint((max-width $screen-xs-max)) {
         @include responsive-visibility($display);
       }
     }
-    @include media(min-width $screen-sm-min max-width $screen-sm-max) {
+    @include breakpoint((min-width $screen-sm-min) (max-width $screen-sm-max)) {
       @include responsive-visibility($display);
     }
     &.visible-#{$namespace}-md {
-      @include media(min-width $screen-md-min max-width $screen-md-max) {
+      @include breakpoint((min-width $screen-md-min) (max-width $screen-md-max)) {
         @include responsive-visibility($display);
       }
     }
     &.visible-#{$namespace}-lg {
-      @include media(min-width $screen-lg-min) {
+      @include breakpoint((min-width $screen-lg-min)) {
         @include responsive-visibility($display);
       }
     }
@@ -74,20 +71,20 @@
   .visible-#{$namespace}-md {
     @include responsive-invisibility();
     &.visible-#{$namespace}-xs {
-      @include media(max-width $screen-xs-max) {
+      @include breakpoint((max-width $screen-xs-max)) {
         @include responsive-visibility($display);
       }
     }
     &.visible-#{$namespace}-sm {
-      @include media(min-width $screen-sm-min max-width $screen-sm-max) {
+      @include breakpoint((min-width $screen-sm-min) (max-width $screen-sm-max)) {
         @include responsive-visibility($display);
       }
     }
-    @include media(min-width $screen-md-min max-width $screen-md-max) {
+    @include breakpoint((min-width $screen-md-min) (max-width $screen-md-max)) {
       @include responsive-visibility($display);
     }
     &.visible-#{$namespace}-lg {
-      @include media(min-width $screen-lg-min) {
+      @include breakpoint((min-width $screen-lg-min)) {
         @include responsive-visibility($display);
       }
     }
@@ -104,21 +101,21 @@
   .visible-#{$namespace}-lg {
      @include responsive-invisibility();
     &.visible-#{$namespace}-xs {
-      @include media (max-width $screen-xs-max) {
+      @include breakpoint((max-width $screen-xs-max)) {
          @include responsive-visibility($display);
       }
     }
     &.visible-#{$namespace}-sm {
-      @include media (min-width $screen-sm-min max-width $screen-sm-max) {
+      @include breakpoint((min-width $screen-sm-min) (max-width $screen-sm-max)) {
          @include responsive-visibility($display);
       }
     }
     &.visible-#{$namespace}-md {
-      @include media(min-width $screen-md-min max-width $screen-md-max) {
+      @include breakpoint((min-width $screen-md-min) (max-width $screen-md-max)) {
          @include responsive-visibility($display);
       }
     }
-    @include media(min-width $screen-lg-min) {
+    @include breakpoint((min-width $screen-lg-min)) {
        @include responsive-visibility($display);
     }
   }
@@ -133,21 +130,21 @@
 @mixin hidden-xs($namespace: "", $display: block) {
   .hidden-#{$namespace}-xs {
     @include responsive-visibility($display);
-    @include media(max-width $screen-xs-max) {
+    @include breakpoint((max-width $screen-xs-max)) {
       @include responsive-invisibility();
     }
     &.hidden-#{$namespace}-sm {
-      @include media(min-width $screen-sm-min max-width $screen-sm-max) {
+      @include breakpoint((min-width $screen-sm-min) (max-width $screen-sm-max)) {
         @include responsive-invisibility();
       }
     }
     &.hidden-#{$namespace}-md {
-      @include media (min-width $screen-md-min max-width $screen-md-max) {
+      @include breakpoint((min-width $screen-md-min) (max-width $screen-md-max)) {
          @include responsive-invisibility();
       }
     }
     &.hidden-#{$namespace}-lg {
-      @include media (min-width $screen-lg-min) {
+      @include breakpoint((min-width $screen-lg-min)) {
          @include responsive-invisibility();
       }
     }
@@ -165,20 +162,20 @@
   .hidden-#{$namespace}-sm {
     @include responsive-visibility($display);
     &.hidden-#{$namespace}-xs {
-      @include media (max-width $screen-xs-max) {
+      @include breakpoint((max-width $screen-xs-max)) {
          @include responsive-invisibility();
       }
     }
-    @include media (min-width $screen-sm-min max-width $screen-sm-max) {
+    @include breakpoint((min-width $screen-sm-min) (max-width $screen-sm-max)) {
        @include responsive-invisibility();
     }
     &.hidden-#{$namespace}-md {
-      @include media (min-width $screen-md-min max-width $screen-md-max) {
+      @include breakpoint((min-width $screen-md-min) (max-width $screen-md-max)) {
          @include responsive-invisibility();
       }
     }
     &.hidden-#{$namespace}-lg {
-      @include media (min-width $screen-lg-min) {
+      @include breakpoint((min-width $screen-lg-min)) {
          @include responsive-invisibility();
       }
     }
@@ -195,20 +192,20 @@
  .hidden-#{$namespace}-md {
   @include responsive-visibility($display);
    &.hidden-#{$namespace}-xs {
-     @include media (max-width $screen-xs-max) {
+     @include breakpoint((max-width $screen-xs-max)) {
         @include responsive-invisibility();
      }
    }
    &.hidden-#{$namespace}-sm {
-     @include media (min-width $screen-sm-min max-width $screen-sm-max) {
+     @include breakpoint((min-width $screen-sm-min) (max-width $screen-sm-max)) {
         @include responsive-invisibility();
      }
    }
-   @include media (min-width $screen-md-min max-width $screen-md-max) {
+   @include breakpoint((min-width $screen-md-min) (max-width $screen-md-max)) {
     @include responsive-invisibility();
    }
    &.hidden-#{$namespace}-lg {
-     @include media (min-width $screen-lg-min) {
+     @include breakpoint((min-width $screen-lg-min)) {
         @include responsive-invisibility();
      }
    }
@@ -225,21 +222,21 @@
   .hidden-#{$namespace}-lg {
      @include responsive-visibility($display);
     &.hidden-#{$namespace}-xs {
-      @include media (max-width $screen-xs-max) {
+      @include breakpoint((max-width $screen-xs-max)) {
          @include responsive-invisibility();
       }
     }
     &.hidden-#{$namespace}-sm {
-      @include media (min-width $screen-sm-min max-width $screen-sm-max) {
+      @include breakpoint((min-width $screen-sm-min) (max-width $screen-sm-max)) {
          @include responsive-invisibility();
       }
     }
     &.hidden-#{$namespace}-md {
-      @include media (min-width $screen-md-min max-width $screen-md-max) {
+      @include breakpoint((min-width $screen-md-min) (max-width $screen-md-max)) {
          @include responsive-invisibility();
       }
     }
-    @include media (min-width $screen-lg-min) {
+    @include breakpoint((min-width $screen-lg-min)) {
        @include responsive-invisibility();
     }
   }
