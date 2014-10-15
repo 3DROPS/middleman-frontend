@@ -5,6 +5,7 @@
 html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   background: none;
+  font-size: 62.5%; // Base 10 rem
 }
 
 html, body {
@@ -16,7 +17,7 @@ body {
   background:  $color-background;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
-  font-size:   $base-font-size;
+  @include font-size($base-font-size);
   line-height: $base-line-height;
   color:       $base-text-color;
   text-rendering: optimizeLegibility;
@@ -48,6 +49,4 @@ a {
   }
 }
 
-img {
-  vertical-align: middle;
-}
+img { vertical-align: middle; }

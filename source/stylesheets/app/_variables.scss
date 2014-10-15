@@ -4,14 +4,14 @@
 
 $color-background: #fff;
 $color-link: #000;
-$color-text: #fff;
+$color-text: #000;
 $color-headings: #000;
 
 //
 // Type Settings
 // --------------------------------------------------
 
-$base-font-size:    14px;
+$base-font-size:    14;
 $base-line-height:  1.4;
 $base-font-weight: 400;
 $base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -30,19 +30,19 @@ $line-height-computed: floor(($base-font-size * $base-line-height));
 // Headings Font Sizes
 // --------------------------------------------------
 
-$giga-size:         60px;
-$mega-size:         54px;
-$kilo-size:         48px;
+$giga-size:         60;
+$mega-size:         54;
+$kilo-size:         48;
 
-$h1-size:           30px; // .alpha
-$h2-size:           28px; // .beta
-$h3-size:           26px; // .gamma
-$h4-size:           24px; // .delta
-$h5-size:           18px; // .epsilon
-$h6-size:           16px; // .zeta
+$h1-size:           30; // .alpha
+$h2-size:           28; // .beta
+$h3-size:           26; // .gamma
+$h4-size:           24; // .delta
+$h5-size:           18; // .epsilon
+$h6-size:           16; // .zeta
 
-$milli-size:        12px;
-$micro-size:        10px;
+$milli-size:        12;
+$micro-size:        10;
 
 //
 // Z-index master list
@@ -59,7 +59,7 @@ $micro-size:        10px;
 // --------------------------------------------------
 
 // HiDPI
-$hidpi: min-resolution 1.5dppx;
+$hidpi: (min-resolution 1.5dppx);
 
 // Extra small screen / phone
 $screen-xs:                  480px;
